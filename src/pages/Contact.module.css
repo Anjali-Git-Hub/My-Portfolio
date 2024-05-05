@@ -1,0 +1,124 @@
+.form {
+  max-width: 700px;
+  width: 90%;
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h1 {
+  font-size: 7rem;
+  margin: 0.5em 0;
+}
+.outerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerDiv,
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+}
+label {
+  font-size: 1.5rem;
+}
+input {
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(229, 231, 235, 0.75);
+  font-size: 1.8rem;
+  font-family: monospace;
+}
+input:focus,
+.textarea textarea:focus {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #1b1b1b;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 0.8em;
+}
+.textarea {
+  width: 100%;
+}
+.textarea textarea {
+  height: 181px;
+  background-color: rgba(229, 231, 235, 0.75);
+  padding: 0.8em;
+  font-size: 1.8rem;
+  border: none;
+}
+form button {
+  margin: 1.5em auto;
+  padding: 0.8em 6em;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background: var(--Almost-Black);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  border: 1px solid black;
+  background: var(--Almost-White);
+  color: var(--Almost-black);
+}
+.otherLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+  align-items: center;
+}
+.otherLinks a {
+  font-size: 2rem;
+  padding: 0.5em 4em;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+}
+.otherLinks a:hover {
+  transform: scale(1.05);
+}
+.linkedin {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  color: #fff;
+  border-radius: 8px;
+}
+form .twitter {
+  background-color: rgba(27, 27, 27, 0.8);
+  padding: 0.5em 4.4em;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* #################### Media queries ############## */
+@media (max-width: 619px) {
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .outerDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .innerDiv,
+  .textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 463px) {
+  .otherLinks a,
+  form button {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+  }
+}

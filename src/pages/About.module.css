@@ -1,0 +1,135 @@
+.hd,
+.expHd {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-weight: var(--bold);
+}
+.secHd {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--Medium-Gray);
+}
+.aboutSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.biblography,
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 1em 0;
+}
+.biblography p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.experience {
+  text-align: center;
+}
+span {
+  font-size: 7rem;
+  font-weight: 800;
+}
+span + p {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--Medium-Gray);
+}
+
+/* ############ experience section ########### */
+
+.expHd,
+.eduHd {
+  font-size: 6rem;
+  font-weight: 800;
+}
+.expSec,
+.eduSec {
+  margin: 5em 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.expSec h2,
+.eduSec h2 {
+  font-size: 2.5rem;
+}
+.expSec h3,
+.eduSec h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--Medium-Gray);
+}
+.expSec p,
+.eduSec p {
+  font-size: 1.8rem;
+  line-height: 25px;
+}
+.exp1,
+.exp2,
+.edu1,
+.edu2 {
+  background-color: rgba(229, 231, 235, 0.75);
+  max-width: 521px;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.exp1:hover,
+.exp2:hover,
+.edu1:hover,
+.edu2:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+.expSec span a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #4bb1da;
+}
+
+/* ####################### Footer ############# */
+
+footer{
+  margin-top: 6em;
+  border-top: 2px solid #000;
+  padding: 1rem;
+  text-align:center;
+
+}
+footer a{
+  padding:0 0.8em;
+}
+
+
+
+/* ####################### Media Queries ################## */
+@media (max-width: 500px) {
+  .hd,
+  .expHd {
+    font-size: 4rem;
+  }
+  .expSec h2, .eduSec h2 {
+    font-size: 2rem;
+}
+span {
+  font-size: 2rem;
+}
+
+}
+

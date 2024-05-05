@@ -1,0 +1,13 @@
+
+.socials{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:white;
+}
+
+.line{
+    height:130px;
+    width:2px;
+    background:black;
+}

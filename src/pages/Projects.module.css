@@ -1,0 +1,268 @@
+img {
+  border-radius: 10px;
+  aspect-ratio: auto 1628 / 886;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.hd {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 6rem;
+  text-transform: capitalize;
+  font-weight: var(--bold);
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.projects > * {
+  width: 100%;
+
+  display: flex;
+  border-radius: 30px;
+}
+
+.image,
+.content {
+  width: 50%;
+  padding: 5rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.projects h3 {
+  font-size: 2.5rem;
+  color: #4bb1da;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.projects h2 a,
+.blogs h2 a {
+  font-size: 3rem;
+  color: var(--Almost-Black);
+}
+.projects h2 a:hover,
+.blogs h2 a:hover,
+.restBlogs h2 a:hover {
+  text-decoration: underline;
+}
+.projects p {
+  font-size: 1.8rem;
+  line-height: 25px;
+  color: rgba(27, 27, 27, 0.75);
+  font-weight: 500;
+}
+.projectLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.visitBtn {
+  margin: 0.5em 0;
+  padding: 0.8em 1.2em;
+  border: 2px solid black;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--Almost-Black);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.visitBtn:hover {
+  border: 1px solid black;
+  background: var(--Almost-White);
+  color: var(--Almost-black);
+}
+
+.subProjects {
+  justify-content: space-between;
+}
+
+.subF,
+.subS {
+  border-radius: 30px;
+
+  width: 46%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* box-shadow: 5px 5px #4bb1da; */
+}
+.subProjects img {
+  width: 100%;
+  height: 100%;
+}
+
+.majorProject,
+.subF,
+.subS {
+  border: 1px solid #000;
+  box-shadow: 10px 10px #000;
+}
+.subContent .projectLinks {
+  justify-content: space-between;
+}
+.subContent > * {
+  padding: 0.1em 0;
+}
+.visit {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--Medium-Gray);
+}
+/* ################## Blogs section ##############*/
+.blogs {
+  margin-top: 10em;
+}
+
+.blogs p {
+  font-size: 1.6rem;
+}
+.blogs h3 {
+  font-size: 1.5rem;
+  color: #4bb1da;
+  font-weight: 500;
+}
+.blogContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mainBlogs {
+  display: flex;
+  justify-content: space-between;
+}
+.mainBlogs > * {
+  width: 46%;
+  border: 1px solid #000;
+  box-shadow: 10px 10px #000;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 20px;
+}
+
+.secHd {
+  margin: 6em 0;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.restBlogs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restBlogs > * {
+  padding: 2.5rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 4px 4px #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restBlogs h3 {
+  color: #4bb1da;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.restBlogs h2 a {
+  font-size: 2.5rem;
+  color: var(--Almost-Black);
+}
+footer {
+  margin-top: 6em;
+  border-top: 2px solid #000;
+}
+footer p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+@media (max-width: 1007px) {
+  .hd {
+    font-size: 4rem;
+  }
+  .image,
+  .content {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .projects > * {
+    flex-direction: column;
+  }
+  .subF,
+  .subS {
+    width: 100%;
+  }
+  img:hover {
+    transform: scale(1.02);
+  }
+  .projectLinks {
+    justify-content: space-between;
+  }
+  .projects,
+  .subProjects {
+    gap: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .mainBlogs {
+    flex-direction: column;
+    gap: 7rem;
+  }
+  .mainBlogs > * {
+    width: 100%;
+  }
+  .mainBlogs img {
+    height: 60%;
+  }
+  .blogContent {
+    gap: 30px;
+  }
+  .secHd {
+    margin: 3em 0;
+  }
+  .restBlogs h2 a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 470px) {
+  .hd {
+    font-size: 2rem;
+  }
+  .projects h2 a,
+  .blogs h2 a {
+    font-size: 2rem;
+  }
+  .restBlogs h2 a {
+    font-size: 1.5rem;
+  }
+  .restBlogs h3 {
+    font-size: 1rem;
+    margin: 0 1.2em;
+  }
+  .projects p {
+    font-size: 1.5rem;
+  }
+  .visitBtn {
+    font-size: 1.5rem;
+  }
+}
